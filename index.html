@@ -1,0 +1,203 @@
+<!Doctype html>
+<head>
+<title>
+My Website
+</title>
+
+<style>
+ body{
+  color: #F4F4F4;
+  background: #0f0f10;
+  direction: rtl;
+  font-family: Aljazeera;
+ }
+
+ marquee{
+  border-radius: 2px;
+ }
+.container{
+  display:flex;
+  width: 100%;
+  height: 400px;
+  background-image: url("https://images.unsplash.com/photo-1558980395-2f289089d3ec?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  border-image:fill 0 linear-gradient(#0001, #000);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
+
+.a1{
+  width: 90%;
+  height: 100%;
+  align-content: end;
+  }
+
+.a2{
+  width: 10%;
+  height: 100%;
+  align-content: end;
+  }
+
+ h3{
+  //color: white;
+  //background: gray;
+  text-align: center;
+ }
+
+ table{
+  color: black;
+  font-size: 18px;
+  //background: red;
+  width: 100%;
+  cell-spacing: 2px;
+ }
+
+ th{
+  //color: white;
+  border: 0px solid white;
+  border-color: white;
+  border-radius: 3px;
+  background: #F6921E;
+  padding: 10px 10px;
+
+ }
+
+ td{
+  color: white;
+
+  border-radius: 3px;
+  padding: 4px 10px;
+ }
+
+tr:nth-child(even) {
+  background-color: black;
+}
+
+tr:nth-child(odd) {
+  background-color: #1e1e1e;
+}
+
+input[type=checkbox]{
+  padding:0.1px;
+  accent-color: #d37d1a;
+  width: 100%;
+  height: 15px;
+}
+
+ td:nth-child(3){
+  width: 10%;
+  vertical-align: middle;
+  text-align: center;
+ }
+
+img{
+  height: 100%;
+}
+
+
+</style>
+
+</head>
+<body>
+<button id="learnMoreBtn" onclick="test()">Learn More</button>
+<marquee direction= "right" bgcolor="#F6921E">
+ <h3>
+  تحتاج مساعدة اتصل بنا على الرقم التالي 01061795937
+ </h3>
+</marquee>
+
+
+<div class="container">
+  <div class="a1"><h1>ابراهيم محمد ابراهيم منصور</h1></div>
+  <div class="a2"><a href="https://www.facebook.com/IbrahimMoMansour"><h1>🤍</h1></a></div>
+</div>
+
+<h4>أدرس القانون في كلية الشريعة والقانون بجامعة الأزهر</h4>
+
+<h4 id="text">
+ اعمل كمطور برامج لدى شركة البستان الحديث
+</h4>
+
+<table id="mytable" caption="كورساتي">
+
+	<tr>
+	 <th>الكورس</th>
+	 <th>المحاضر</th>
+	 <th>الإنجاز</th>
+	</tr>
+
+	<tr>
+	 <td>الكتابة السريعة</td>
+	 <td>أكاديمية الطباعة</td>
+	 <td><input type="checkbox"></input></td>
+	</tr>
+
+	<tr>
+	 <td>Excel</td>
+	 <td>العسال</td>
+	 <td><input type="checkbox"></input></td>
+	</tr>
+
+	<tr>
+	 <td>Word</td>
+	 <td>المنذر سفان</td>
+	 <td><input type="checkbox"></input></td>
+	</tr>
+
+	<tr>
+	 <td>PowerPoint</td>
+	 <td>المنذر سفان</td>
+	 <td><input type="checkbox"></input></td>
+	</tr>
+
+	<tr>
+	 <td>Access</td>
+	 <td>المنذر سفان</td>
+	 <td><input type="checkbox"></input></td>
+	</tr>
+
+	<tr>
+	 <td>VBA</td>
+	 <td>المنذر سفان</td>
+	 <td><input type="checkbox"></input></td>
+	</tr>
+
+	<tr>
+	 <td>Google sheets</td>
+	 <td></td>
+	 <td><input type="checkbox"></input></td>
+	</tr>
+
+	<tr>
+	 <td>Google Docs</td>
+	 <td></td>
+	 <td><input type="checkbox"></input></td>
+	</tr>
+
+	<tr>
+	 <td>Google Slides</td>
+	 <td></td>
+	 <td><input type="checkbox"></input></td>
+	</tr>
+
+	<tr>
+	 <td>Google Apps script</td>
+	 <td></td>
+	 <td><input type="checkbox"></input></td>
+	</tr>
+
+</table>
+<script src="script.js"></script>
+<script>
+
+
+ function test(){
+  alert('السلام عليكم ورحمة الله وبركاته');
+  document.write('تم بنجاح');
+};
+
+
+
+
+</script>
+</body>
